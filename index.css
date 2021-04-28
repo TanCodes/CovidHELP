@@ -1,36 +1,48 @@
+*{
+  margin: 0%;
+  padding: 0%;
+}
+
+/* container */
 .container {
     max-width: 960px;
   }
+
+.btn-primary{
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
   
-  .jumbotron{
-    background: #232526;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #606163, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left,#606163, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 10px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+.jumbotron{
+  background: #232526;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #606163, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left,#606163, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 10px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+/* translate style */
+.translated-ltr{margin-top:-40px;}
+.translated-ltr{margin-top:-40px;}
+.goog-te-banner-frame {display: none;margin-top:-20px;}
+.goog-logo-link {
+  display:none !important;
+} 
+.goog-te-gadget{
+  color: transparent !important;
+}
+.alert-success {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 10px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+  /* Home */
+@media (max-width: 800px) {
+  .about-web-p{
+   font-size: 14px;
   }
-  /*
-   * Custom translucent site header
-   */
-  
-  .site-header {
-    background-color: rgba(0, 0, 0, .85);
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
-    backdrop-filter: saturate(180%) blur(20px);
+  .about-web{
+    margin-top: -10px;
   }
-  .site-header a {
-    color: #999;
-    transition: ease-in-out color .15s;
-  }
-  .site-header a:hover {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  /*
-   * Dummy devices (replace them with your own or something else entirely!)
-   */
-  
+}
+
+/* covid logo */
 .cov-logo{
   width: 100px;
   height: inherit;
@@ -52,10 +64,8 @@
     margin-top: 10%;
   }
 }
-  /*
-   * Extra utilities
-   */
-  
+
+/* Extra utilities*/  
   .flex-equal > * {
     -ms-flex: 1;
     flex: 1;
@@ -66,44 +76,35 @@
       flex: 1;
     }
   }
-  
-  .overflow-hidden { overflow: hidden; }
-  
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      user-select: none;
-    }
 
-    /* new */
+/* new */
+.drop_class{
+  min-height: 300px;
+}
 
-    .drop_class{
-        min-height: 300px;
-    }
+.scrollable-menu {
+  height: auto;
+  max-height: 250px;
+  overflow-x: hidden;
+}
 
-    .scrollable-menu {
-        height: auto;
-        max-height: 250px;
-        overflow-x: hidden;
-    }
+nav{
+  position: fixed;
+  font-size: 1.2rem;
+}
 
-    nav{
-        position: fixed;
-        font-size: 1.2rem;
-    }
+/* covid text icon */
+.fa-virus{
+  font-size: 24px;
+}
 
-/* img{
-      height: 200px;
-      width: auto;
-} */
-
+/* doctor icon */
 .fa-user-md{
 color: rgb(141, 227, 238);
 font-size: 5rem;
-
 }
+
+/* mask icon */
 .fa-head-side-mask{
 color: white;
 }
@@ -111,18 +112,7 @@ color: white;
   color: aliceblue;
 }
 
-/* covid */
-.fw-dark{
-  margin-top: 1rem;
-}
-
-/* .p_location{
-  margin-top:15px;
-  background: rgb(141, 141, 141);
-  color: rgb(235, 235, 235);
-  padding: 3px;
-} */
-
+/* insta icon */
 .fa-instagram{
   color: rgb(199, 81, 100);
   font-size: 1.5rem;
@@ -132,38 +122,37 @@ color: white;
   color: aliceblue;
 }
 
+/* code icon */
 .fa-code{
   color: black;
   font-size: 1.5rem;
 }
-
 .fa-code:hover{
   color: #fff;
 }
 
+/* twitter icon */
 .fa-twitter-square{
   color: rgb(152, 205, 255);
   font-size: 1.7rem;
   border: 1 solid rgb(22, 36, 231);
 }
-
 .fa-twitter-square:hover{
   color: aliceblue;
 }
-.img-thumbnail{
-  height: 310px;
-}
 
+/* about creators caption */
 @media (max-width: 768px) {
   .carousel-caption{
     font-size: 10px;
   }
 }
 
-/* 
-drop down
- */
+.fw-bold{
+  text-shadow: 0.2px 1px 3px rgba(149, 199, 150, 1);
+}
 
+/* drop down*/
 .dropbtn {
   background: #485563;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #29323c, #485563);  /* Chrome 10-25, Safari 5.1-6 */
@@ -174,13 +163,13 @@ drop down
   border: 2px solid rgb(207, 238, 166);
   border-radius: 1rem;
   cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .dropbtn:hover, .dropbtn:focus {
   background: #396afc;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #2948ff, #396afc);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #2948ff, #396afc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
 }
 
 #myInput {
@@ -228,16 +217,5 @@ drop down
     top: 50%;
     left: 40%;
     
-  }
-}
-
-/* covid */
-
-@media (max-width: 800px) {
-  .about-web-p{
-   font-size: 14px;
-  }
-  .about-web{
-    margin-top: -10px;
   }
 }

@@ -1,7 +1,14 @@
+*{
+  margin: 0%;
+  padding: 0%;
+}
+
+/* container */
 .container {
     max-width: 960px;
   }
 
+/* covid logo */
 .cov-logo{
   width: 100px;
   height: inherit;
@@ -18,18 +25,16 @@
 }
 }
 
+/* nav */
+nav{
+  position: fixed;
+  font-size: 1.2rem;
+}
 
-
-/* new */
-    nav{
-        position: fixed;
-        font-size: 1.2rem;
-    }
-
+/* mask icon */
 .mask{
   color: aliceblue;
 }
-
 
 /* table */
 .table {
@@ -41,5 +46,20 @@
   content: counter(serial-number);  /* Display the counter */
 }
 
-/* carousel-caption */
+/* accordion-button effect */
+.accordion-button:hover{
+  background: #C9D6FF;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 
+/* translate style */
+.translated-ltr{margin-top:-40px;}
+.translated-ltr{margin-top:-40px;}
+.goog-te-banner-frame {display: none;margin-top:-20px;}
+.goog-logo-link {
+  display:none !important;
+} 
+.goog-te-gadget{
+  color: transparent !important;
+}
