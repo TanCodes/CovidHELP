@@ -1,0 +1,45 @@
+.container {
+    max-width: 960px;
+  }
+
+.cov-logo{
+  width: 100px;
+  height: inherit;
+}
+
+@media (max-width: 768px) {
+  .cov-logo{
+    width: 60px;
+    height: inherit;
+  }
+  /* home section */
+.home_section{
+  margin-top: 45px;
+}
+}
+
+
+
+/* new */
+    nav{
+        position: fixed;
+        font-size: 1.2rem;
+    }
+
+.mask{
+  color: aliceblue;
+}
+
+
+/* table */
+.table {
+  counter-reset: serial-number;  /* Set the serial number counter to 0 */
+}
+
+.table .class_th:first-child:before {
+  counter-increment: serial-number;  /* Increment the serial number counter */
+  content: counter(serial-number);  /* Display the counter */
+}
+
+/* carousel-caption */
+

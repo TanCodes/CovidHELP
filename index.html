@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>CovidHELP | lets help others</title>
+
+      <!-- Bootstrap core CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+     <!-- semantic -->
+
+      <!--css  -->
+      <link href="index.css" rel="stylesheet">
+
+      <!-- style for translate  -->
+        <style>
+        .translated-ltr{margin-top:-40px;}
+        .translated-ltr{margin-top:-40px;}
+        .goog-te-banner-frame {display: none;margin-top:-20px;}
+
+        .goog-logo-link {
+          display:none !important;
+        } 
+
+        .goog-te-gadget{
+          color: transparent !important;
+        }
+       
+
+        </style>
+
+        <!-- script translate -->
+        <script type="text/javascript">
+          function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+          }
+        </script>
+
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        </script>
+  </head>
+<body>
+
+<!--------------------------------------------------- nav bar ------------------------------------------------------------------------>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand " href="#">
+    <img class="cov-logo" src="images/cov.png" alt="">
+      </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">Team </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#help">Help</a>
+        </li>
+
+      </ul>
+      <div class="container text-center mask">
+      Stay home & Stay Safe <i class="fas fa-head-side-mask"></i>
+      </div>
+      
+    </div>
+  </div>
+</nav> 
+
+<!---------------------------------------------------- home ---------------------------------------------------------------------->
+
+<main id="home">
+  
+    <section class="py-4 text-center container home_section">
+      <div class="row py-lg-5">
+        <div class="col-lg-9 col-md-9 mx-auto about-web">
+          <h1 class="fw-bold">Covid<span style="color:#37DF48;">HELP</span> </h1>
+          <p class="lead text-muted mt-3 about-web-p">
+            CovidHELP website has been created to help people who need Oxygen, Beds, Plasma, Ventilators, etc.
+              <br>
+              This website contains the contact and location details of the resources available at that particular location.
+          </p>
+
+          <!-- translate -->
+          <div id="google_translate_element">
+          </div>
+        </div>
+
+          <!-- Button trigger modal -->
+
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Guide to use
+          </button>
+          <!-- Modal -->
+          <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    Guide to use - </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="text-align: left;">
+                  <b>If anyone needs help just follow the steps:</b>  <br>
+                  <strong>1. </strong> Click on the "Search location", then select a particular or nearby location. <br>
+                  <strong>2. </strong> Then click on the required resource. <br>
+                  <strong>3. </strong>Click on view the details, contact them, and enquire about the availability. <br>
+                <p style="text-align: center;">| Verified Information |</p>
+                </div>
+                <div class="modal-footer">
+                  <p>CovidHELP</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+</main>
+<!------------------------------------------------ Dropdown section ----------------------------------------------------------------->
+<main class="container mb-5">
+          <h2>Search Your Location</h2>
+          <div class="dropdown mt-2">
+            <button onclick="myFunction()" class="dropbtn"> <strong> Search Location here <i class="fas fa-arrow-alt-circle-down"></i></strong></button>
+            <div id="myDropdown" class="dropdown-content scrollable-menu">
+              <input type="text" placeholder="Search location.." id="myInput" onkeyup="filterFunction()">
+              <a class="dropdown-item" target="_blank" href="#">Ahmednagar</a>
+              <a class="dropdown-item" target="_blank" href="#">Amravati</a>
+              <a class="dropdown-item" target="_blank" href="#">Aurangabad</a>
+              <a class="dropdown-item" target="_blank" href="#">Beed</a>
+              <a class="dropdown-item" target="_blank" href="#">Bhandara</a>
+              <a class="dropdown-item" target="_blank" href="#">Buldhana</a>
+              <a class="dropdown-item" target="_blank" href="#">Chandrapur</a>
+              <a class="dropdown-item" target="_blank" href="#">Dhule</a>
+              <a class="dropdown-item" target="_blank" href="#">Gadchiroli</a>
+              <a class="dropdown-item" target="_blank" href="#">Gondia</a>
+              <a class="dropdown-item" target="_blank" href="#">Hingoli</a>
+              <a class="dropdown-item" target="_blank" href="#">Jalgaon</a>
+              <a class="dropdown-item" target="_blank" href="#">Jalna</a>
+              <a class="dropdown-item" target="_blank" href="#">Kolhapur</a>
+              <a class="dropdown-item" target="_blank" href="#">Latur</a>
+              <a class="dropdown-item" target="_blank" href="#">Mumbai City</a>
+              <a class="dropdown-item" target="_blank" href="locations/mumbai.html">Mumbai Suburban</a>
+              <a class="dropdown-item" target="_blank" href="#">Nagpur</a>
+              <a class="dropdown-item" target="_blank" href="#">Nanded</a>
+              <a class="dropdown-item" target="_blank" href="#">Nandurbar</a>
+              <a class="dropdown-item" target="_blank" href="#">Nashik</a>
+              <a class="dropdown-item" target="_blank" href="#">Navi Mumbai</a>
+              <a class="dropdown-item" target="_blank" href="#">Osmanabad</a>
+              <a class="dropdown-item" target="_blank" href="#">Palghar</a>
+              <a class="dropdown-item" target="_blank" href="#">Parbhani</a>
+              <a class="dropdown-item" target="_blank" href="locations/pune.html">Pune</a>
+              <a class="dropdown-item" target="_blank" href="#">Raigad</a>
+              <a class="dropdown-item" target="_blank" href="#">Ratnagiri</a>
+              <a class="dropdown-item" target="_blank" href="#">Sangli</a>
+              <a class="dropdown-item" target="_blank" href="#">Satara</a>
+              <a class="dropdown-item" target="_blank"href="#">Sindhudurg</a>
+              <a class="dropdown-item" target="_blank" href="#">Solapur</a>
+              <a class="dropdown-item" target="_blank" href="locations/thane.html">Thane</a>
+              <a class="dropdown-item" target="_blank" href="#">Wardha</a>
+              <a class="dropdown-item" target="_blank" href="#">Washim</a>
+              <a class="dropdown-item" target="_blank" href="#">Yavatmal</a>          
+            </div>
+          </div>
+    
+            <div class="container mt-4 text-lg-center">
+              <i class="fas fa-user-md"></i>
+            </div>
+
+          <div class="alert alert-success mt-3" role="alert">
+            <h4 class="alert-heading">Note -</h4>
+            <p>- As of now, this website is designed only for Maharastra state. We will soon update the details of other states too.</p>
+            <p>- If you can't find your specific location then, select the nearest location to yours.</p>          
+          </div>
+</main>
+
+<!---------------------------------- MAIN jumbotron --------------- ------------------------------------>
+ 
+<div class="jumbotron p-4 p-md-4 text-white rounded ">
+    <div class="text-center">
+      <h4 class=" font-italic">Come lets help each other</h4> 
+      <p class="lead my-3"> 
+        Wear mask <i class="fas fa-head-side-mask"></i> |
+        Keep social-distancing <i class="fas fa-people-arrows"></i> |
+        Stay home and stay safe <i class="fas fa-hands-wash"></i> 
+      </p>
+    </div>
+</div>
+
+<!-------------------------------------------------------- About ----------------------------------------------------------------------->
+<main role="main">
+  <div class=" py-5 mt-4 bg-light" id="about">
+    <div class="container">
+      <h3 class="text-center">About Creators</h3>
+      <div class="row row-cols-md-2 justify-content-center">
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="images/abboy.png" class="d-block w-100 mb-3" alt="...">
+              <div class="carousel-caption"> <br> 
+                <strong><h5>  TANMAY BARVI</h5></strong>
+                <b class="text-dark"> <h6> <u>Web Developer</u></h6> </b>
+                <p>The coder behind this website <br> <br>
+                  <a href="https://www.instagram.com/_tancodes_/" target="_blank" class="btn btn-sm ">
+                  <i class="fab fa-instagram"></i></a>
+                  <a href="http://tancodes.atspace.cc/" target="_blank" class="btn btn-sm ">
+                    <i class="fas fa-code"></i></a>
+                </p>   
+              </div>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="10000">
+              <img src="images/abgirl.png" class="d-block w-100 mb-3" alt="...">
+              <div class="carousel-caption">
+                <strong><h5>Mayuri Barvi </h5></strong>
+                <b class="text-dark"> <h6><u>Resource head</u> </h6> </b>
+                <p>Verified resource provider  <br> <br>
+                  <a href="https://twitter.com/Mayurib18?s=09" target="_blank" class="btn btn-sm ">
+                    <i class="fab fa-twitter-square"></i></a>
+                </p> 
+              </div>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="images/abgirl.png" class="d-block w-100 mb-3" alt="...">
+              <div class="carousel-caption">
+                <strong><h5>MUGDHA BHAVE</h5></strong>
+                <b class="text-dark"> <h6><u>Resource head</u> </h6> </b>
+                <p>Verified resource provider  <br> <br>
+                  <a href="https://www.instagram.com/_mantramugdh/" target="_blank" class="btn btn-sm ">
+                    <i class="fab fa-instagram"></i></a>
+                </p> 
+              </div>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="images/abboy.png" class="d-block w-100 mb-3" alt="...">
+              <div class="carousel-caption ">
+                <strong><h5> YOU CAN BE THE NEXT</h5></strong>
+                <b class="text-dark"> <h6> <u>Resource person</u></h6> </b>
+                <p>If you want to be a part of our team, then email us on   <br> 
+                  <strong>	CovidHELPdesk2021@gmail.com</strong>
+                </p> 
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</main>
+<!--------------------------------------------------------- footer ------------------------------------------------------------------>
+<footer class="container py-5 " id="help">
+  <div class="row border-start">
+    <div class="col-12 col-md">
+      <a href=""> <img class="cov-logo" src="images/cov.png" alt=""></a>
+      <small class="d-block mb-3 text-muted">&copy; 2021 All rights reserved</small>
+    </div>
+
+    <div class="col-6 col-md">
+      <h3>Help</h3>
+      If you have any query then Email us on
+      <br> <strong>	CovidHELPdesk2021@gmail.com</strong> 
+    </div>
+  </div>
+</footer>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/f6b5a1856e.js" crossorigin="anonymous"></script>
+<!-- semantic ui -->
+<script>
+  /* When the user clicks on the button,
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  function filterFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    div = document.getElementById("myDropdown");
+    a = div.getElementsByTagName("a");
+    for (i = 0; i < a.length; i++) {
+      txtValue = a[i].textContent || a[i].innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        a[i].style.display = "";
+      } else {
+        a[i].style.display = "none";
+      }
+    }
+  }
+  </script>
+</body>
+</html>
