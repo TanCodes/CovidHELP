@@ -11,6 +11,11 @@
 
       <!--css  -->
       <link href="index.css" rel="stylesheet">
+      <!-- Fav icons -->
+      <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+      <link rel="manifest" href="favicon_io/site.webmanifest">
 
         <!-- script translate -->
         <script type="text/javascript">
@@ -20,11 +25,12 @@
         </script>
         <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         </script>
+        <!--  -->
+
   </head>
 <body>
-
-<!--------------------------------------------------- nav bar ------------------------------------------------------------------------>
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+<!--------------------------------------------------- nav bar ------------------------------------------------------------------------> 
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand " href="#">
     <img class="cov-logo" src="images/cov.png" alt="">
@@ -51,6 +57,27 @@
   </div>
 </nav> 
 
+<!--------------------------------------------------- Update modal --------------------------------------------------------------------->
+
+ <div class="modal fade" id="updateModal" tabindex="-1" aria-labelledby="updateModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="updateModalLabel">Updating soon..</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Data of other districts will be updated soon!
+      </div>
+      <div class="modal-footer">
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" target="_blank" href="https://www.termsfeed.com/live/644d70a3-b7fd-4c0d-9dc9-019bb0b6547f">Terms & Conditions</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!---------------------------------------------------- home ---------------------------------------------------------------------->
 <main id="home">
     <section class="py-4 text-center container home_section">
@@ -58,7 +85,7 @@
         <div class="col-lg-9 col-md-9 mx-auto about-web">
           <h1 class="fw-bold">C<i class="fas fa-virus"></i>vid<span style="color:#37DF48;">HELP</span></h1>
           <p class="lead text-muted mt-3 about-web-p">
-            CovidHELP website has been created to help people who need Oxygen, Beds, Plasma, Ventilators, etc.
+            CovidHELP website has been created to help people who need Oxygen, Beds, Plasma, Ventilators, etc based on crowdsourced resources.
               <br>
               This website contains the contact and location details of the resources available at that particular location.
           </p>
@@ -84,7 +111,7 @@
                 </div>
                 <div class="modal-body" style="text-align: left;">
                   <b>If anyone needs help just follow the steps:</b>  <br>
-                  <strong>1. </strong> Click on the "Search location", then select a particular or nearby location. <br>
+                  <strong>1. </strong> Click on the "Search location here", then select a particular or nearby location. <br>
                   <strong>2. </strong> Then click on the required resource. <br>
                   <strong>3. </strong>Click on view the details, contact them, and enquire about the availability. <br>
                 <p style="text-align: center;">| Verified Information |</p>
@@ -105,13 +132,14 @@
             <button onclick="myFunction()" class="dropbtn"> <strong> Search Location here <i class="fas fa-arrow-alt-circle-down"></i></strong></button>
             <div id="myDropdown" class="dropdown-content scrollable-menu">
               <input type="text" placeholder="Search location.." id="myInput" onkeyup="filterFunction()">
-              <a class="dropdown-item" target="_blank" href="#">Ahmednagar</a>
-              <a class="dropdown-item" target="_blank" href="#">Amravati</a>
-              <a class="dropdown-item" target="_blank" href="#">Aurangabad</a>
-              <a class="dropdown-item" target="_blank" href="#">Beed</a>
-              <a class="dropdown-item" target="_blank" href="#">Bhandara</a>
-              <a class="dropdown-item" target="_blank" href="#">Buldhana</a>
-              <a class="dropdown-item" target="_blank" href="#">Chandrapur</a>
+              <a class="dropdown-item" target="_blank" href="locations/Ahmednagar.html">Ahmednagar</a>
+              <a class="dropdown-item" target="_blank" href="locations/Amravati.html">Amravati</a> 
+              <a class="dropdown-item" target="_blank" href="locations/Akola.html">Akola</a>
+              <a class="dropdown-item" target="_blank" href="locations/Aurangabad.html">Aurangabad</a>
+              <a class="dropdown-item" target="_blank" href="locations/Beed.html">Beed</a>
+              <a class="dropdown-item" target="_blank" href="locations/Bhandara.html">Bhandara</a>
+              <a class="dropdown-item" target="_blank" href="locations/Buldhana.html">Buldhana</a>
+              <!-- <a class="dropdown-item" target="_blank" href="#">Chandrapur</a>
               <a class="dropdown-item" target="_blank" href="#">Dhule</a>
               <a class="dropdown-item" target="_blank" href="#">Gadchiroli</a>
               <a class="dropdown-item" target="_blank" href="#">Gondia</a>
@@ -119,28 +147,28 @@
               <a class="dropdown-item" target="_blank" href="#">Jalgaon</a>
               <a class="dropdown-item" target="_blank" href="#">Jalna</a>
               <a class="dropdown-item" target="_blank" href="#">Kolhapur</a>
-              <a class="dropdown-item" target="_blank" href="#">Latur</a>
-              <a class="dropdown-item" target="_blank" href="#">Mumbai City</a>
-              <a class="dropdown-item" target="_blank" href="locations/mumbai.html">Mumbai Suburban</a>
-              <a class="dropdown-item" target="_blank" href="#">Nagpur</a>
+              <a class="dropdown-item" target="_blank" href="#">Latur</a> -->
+              <a class="dropdown-item" target="_blank" href="locations/mumbai-city.html">Mumbai City</a>
+              <a class="dropdown-item" target="_blank" href="locations/mumbai-suburban.html">Mumbai Suburban</a>
+              <!-- <a class="dropdown-item" target="_blank" href="#">Nagpur</a>
               <a class="dropdown-item" target="_blank" href="#">Nanded</a>
-              <a class="dropdown-item" target="_blank" href="#">Nandurbar</a>
-              <a class="dropdown-item" target="_blank" href="#">Nashik</a>
-              <a class="dropdown-item" target="_blank" href="#">Navi Mumbai</a>
-              <a class="dropdown-item" target="_blank" href="#">Osmanabad</a>
+              <a class="dropdown-item" target="_blank" href="#">Nandurbar</a> -->
+              <a class="dropdown-item" target="_blank" href="locations/Nashik.html">Nashik</a>
+              <a class="dropdown-item" target="_blank" href="locations/navi-mumbai.html">Navi Mumbai</a>
+              <!-- <a class="dropdown-item" target="_blank" href="#">Osmanabad</a>
               <a class="dropdown-item" target="_blank" href="#">Palghar</a>
-              <a class="dropdown-item" target="_blank" href="#">Parbhani</a>
+              <a class="dropdown-item" target="_blank" href="#">Parbhani</a> -->
               <a class="dropdown-item" target="_blank" href="locations/pune.html">Pune</a>
-              <a class="dropdown-item" target="_blank" href="#">Raigad</a>
-              <a class="dropdown-item" target="_blank" href="#">Ratnagiri</a>
+              <a class="dropdown-item" target="_blank" href="locations/Raigad.html">Raigad</a>
+              <!-- <a class="dropdown-item" target="_blank" href="#">Ratnagiri</a>
               <a class="dropdown-item" target="_blank" href="#">Sangli</a>
               <a class="dropdown-item" target="_blank" href="#">Satara</a>
               <a class="dropdown-item" target="_blank"href="#">Sindhudurg</a>
-              <a class="dropdown-item" target="_blank" href="#">Solapur</a>
+              <a class="dropdown-item" target="_blank" href="#">Solapur</a> -->
               <a class="dropdown-item" target="_blank" href="locations/thane.html">Thane</a>
-              <a class="dropdown-item" target="_blank" href="#">Wardha</a>
+              <!-- <a class="dropdown-item" target="_blank" href="#">Wardha</a>
               <a class="dropdown-item" target="_blank" href="#">Washim</a>
-              <a class="dropdown-item" target="_blank" href="#">Yavatmal</a>          
+              <a class="dropdown-item" target="_blank" href="#">Yavatmal</a>           -->
             </div>
           </div>
     
@@ -149,9 +177,10 @@
             </div>
 
           <div class="alert alert-success mt-3" role="alert">
-            <h4 class="alert-heading">Note -</h4>
-            <p>- As of now, this website is designed only for Maharastra state. We will soon update the details of other states too.</p>
-            <p>- If you can't find your specific location then, select the nearest location to yours.</p>          
+            <h4 class="alert-heading " >Note -</h4>
+            <p>- As of now, this website is designed only for Maharashtra state. We will soon update the details of other states too.</p>
+            <p>- If you can't find your specific location then, select the nearest location to yours.</p>  
+        
           </div>
 </main>
 
@@ -164,9 +193,41 @@
         Keep social-distancing <i class="fas fa-people-arrows"></i> |
         Stay home and stay safe <i class="fas fa-hands-wash"></i> 
       </p>
+     
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Important Links <i class="fas fa-syringe"></i> </button>
+
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header bg-white">
+          <h5 id="offcanvasRightLabel"> <b>Some Helpful Links:</b> (All over INDIA) </h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body scrollable-menu-offcanvas text-left">
+          <strong>
+            <a target="_blank" href="https://pintnetwork.com/patient">- PINT for plasma</a> <br>
+            <a target="_blank" href="https://needplasma.in/">- needplasma</a> <br>
+            <a target="_blank" href="https://dhoondh.com/">- dhoondh</a> <br>
+            <a target="_blank" href="http://www.sevenhillshospital.com/">- sevenhillshospital</a> <br>
+            <a target="_blank" href="https://plasmaline.in/">- plasmaline</a> <br>
+            <a target="_blank" href="https://getplasma.in/FindDonor.php">- getplasma</a> <br>
+            <a target="_blank" href="http://lionsbloodbankdelhi.org/">- lionsbloodbankdelhi</a> <br>
+            <a target="_blank" href="https://ors.gov.in/ebloodbankportal/?ln=E">- Availability of Blood Stock</a> <br>
+            <a target="_blank" href="https://www.maxhealthcare.in/">- maxhealthcare</a> <br>
+            <a target="_blank" href="https://www.teamsosindia.in/">- getplasma</a> <br>
+            <a target="_blank" href="https://covidpune.com/">- covidpune</a> <br>
+            <a target="_blank" href="https://puneplasma.in/">- puneplasma</a> <br>
+            <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSd9D-YJyphUQSS5BOWBsqsD0Nh7oG9aSHX7ElTJ9I46VLTV8g/viewform">- Donate Plasma</a> <br>
+            <a target="_blank" href="https://airtable.com/shrIlOoS6PyhIIVEv/tblyKVMNOSFWPx8iv/viwtQJiBIOQwokS5V?blocks=hide">- airtable</a> <br>
+            <a target="_blank" href="https://docs.google.com/document/d/1uEeTDdu58z8nVLbBG8o1qY2xbOhlb9TRVx5COnw2ZiQ/edit">- Mental health session</a> <br>
+            <a target="_blank" href="https://www.ketto.org/fundraiser/mission-oxygen-helping-hospitals-to-save-lives">- mission-oxygen</a> <br>
+            <a target="_blank" href="https://docs.google.com/spreadsheets/u/0/d/1J-m84rr-tV47wZrUKn41jlTTID5FNcMs5MwyYHt9fLU/htmlview">- Remdesivir Distribution</a> <br>
+            <a target="_blank" href="https://drive.google.com/file/d/1vqbuRPDbM6ZEhgh-fB9-0xFTboqYV3hy/view">- List of medical Oxygen supplier for home use</a> <br>
+            <a target="_blank" href="https://hemkuntfoundation.com/oxygen-cylinder/">- Oxygen Cylinder Relief </a> <br>
+            <a target="_blank" href="https://docs.google.com/spreadsheets/d/1wu80sP5tq2k9bfxjuzUfRORxPDf07gUALfLMrOv-YEI/edit#gid=0">- Covid Meals for India </a> <br>
+          </strong>
+        </div>
+      </div>
     </div>
 </div>
-
 <!-------------------------------------------------------- About Creators ------------------------------------------------------------->
 <main role="main">
   <div class=" py-5 mt-4 bg-light" id="about">
@@ -180,6 +241,7 @@
             <button type="button" data-bs-target="#aboutCreatorsID" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#aboutCreatorsID" data-bs-slide-to="2" aria-label="Slide 3"></button>
             <button type="button" data-bs-target="#aboutCreatorsID" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#aboutCreatorsID" data-bs-slide-to="4" aria-label="Slide 5"></button>
           </div>
 
           <div class="carousel-inner">
@@ -205,6 +267,18 @@
                 <p>Verified resource provider  <br> <br>
                   <a href="https://twitter.com/Mayurib18?s=09" target="_blank" class="btn btn-sm ">
                     <i class="fab fa-twitter-square"></i></a>
+                </p> 
+              </div>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="7000">
+              <img src="images/abgirl.png" class="d-block w-100 mb-3" alt="...">
+              <div class="carousel-caption">
+                <strong><h5>Tanvi Naik</h5></strong>
+                <b class="text-dark"> <h6><u>Resource head</u> </h6> </b>
+                <p>Verified resource provider  <br> <br>
+                  <a href="https://www.instagram.com/_tan_vi__/" target="_blank" class="btn btn-sm ">
+                    <i class="fab fa-instagram"></i></a>
                 </p> 
               </div>
             </div>
@@ -254,19 +328,31 @@
     <div class="col-12 col-md">
       <a href=""> <img class="cov-logo" src="images/cov.png" alt=""></a>
       <small class="d-block mb-3 text-muted">&copy; 2021 All rights reserved</small>
+       <ul class="list-unstyled text-small">
+        <li><a class="text-muted" target="_blank" href="https://www.termsfeed.com/live/644d70a3-b7fd-4c0d-9dc9-019bb0b6547f">Terms & Conditions</a></li>
+      </ul> 
     </div>
 
     <div class="col-6 col-md">
       <h3>Help</h3>
       If you have any query then Email us on
-      <br> <strong>	CovidHELPdesk2021@gmail.com</strong> 
+      <br> <strong>	covidhelpdesk2021@gmail.com</strong> 
     </div>
   </div>
 </footer>
-
 <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+<!-- for update modal -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
 <script src="https://kit.fontawesome.com/f6b5a1856e.js" crossorigin="anonymous"></script>
+<!-- update modal -->
+<script>
+  $(document).ready(function(){
+       $('#updateModal').modal('show');
+   }); 
+</script>
 <!-- normal JS -->
 <script src="index.js"></script>
 </body>
